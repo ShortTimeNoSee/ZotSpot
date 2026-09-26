@@ -1,0 +1,20 @@
+appId: dev.zotstop.app
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: allow
+- assertVisible: "Suggested for now|Explore routes"
+- scrollUntilVisible:
+    element: "Follow me"
+- tapOn: "Follow me"
+- assertVisible: "Following your location until you pause or stop"
+- tapOn: "Pause"
+- assertVisible: "Paused at your last location"
+- tapOn: "Stop"
+- assertVisible: "Off. Use it to find nearby stops"
+- tapOn: "Find once"
+- assertVisible: "Finding a close location, then stopping"
+- extendedWaitUntil:
+    visible: "Last location shown. Tracking is off"
+    timeout: 20000

@@ -1,0 +1,29 @@
+appId: dev.zotstop.app
+---
+- launchApp:
+    clearState: true
+    permissions:
+      all: deny
+- assertVisible: "ZotStop"
+- assertVisible: "Suggested for now|Explore routes"
+- tapOn: "Routes"
+- assertVisible: "Show several routes on the map or open one to see its stops."
+- tapOn: "A A Line Arroyo Vista · Camino del Sol"
+- assertVisible: "Suggested for now|Explore routes"
+- tapOn: "Expand map"
+- assertVisible: "Close full screen map"
+- pressKey: Back
+- assertVisible: "Suggested for now|Explore routes"
+- extendedWaitUntil:
+    visible: "Expand map"
+    timeout: 15000
+- tapOn: "About"
+- assertVisible: "A simpler way to follow campus buses."
+- scrollUntilVisible:
+    element: "Privacy"
+- assertVisible: "Privacy"
+- swipe:
+    start: 25%, 70%
+    end: 75%, 70%
+    duration: 250
+- assertVisible: "Keep your regular route views and stops close."

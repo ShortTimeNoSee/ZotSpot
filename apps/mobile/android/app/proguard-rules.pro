@@ -1,0 +1,1 @@
+-keep class dev.zotstop.app.AospLocationPlugin { *; }

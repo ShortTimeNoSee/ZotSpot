@@ -1,0 +1,9 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+  - 'workers/*'
+allowBuilds:
+  '@bundled-es-modules/glob': true
+  esbuild: true
+  style-dictionary: true
+  workerd: true

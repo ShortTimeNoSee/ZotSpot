@@ -1,0 +1,15 @@
+appId: dev.zotstop.app
+---
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible: "Suggested for now|Explore routes"
+    timeout: 15000
+- scrollUntilVisible:
+    element: "Find once"
+    centerElement: true
+- tapOn: "Find once"
+- extendedWaitUntil:
+    visible: "Last location shown. Tracking is off"
+    timeout: 25000
+- assertNotVisible: "Location permission was not granted"

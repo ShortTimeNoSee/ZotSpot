@@ -1,0 +1,21 @@
+:root {
+  --color-background-base: #000000;
+  --color-background-surface1: #090D14;
+  --color-background-surface2: #141C2B;
+  --color-brand-primary: #3B71E8;
+  --color-brand-accent: #FFC300;
+  --color-state-confidence-high: #00E676;
+  --color-state-confidence-low: #FFB300;
+  --color-state-error: #FF4D4D;
+  --color-text-primary: #F8FAFF;
+  --color-text-secondary: #C3D0E8;
+  --color-text-muted: #A8B5CC;
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-touch-target-min: 48px;
+  --radius-card: 18px;
+  --radius-pill: 9999px;
+}

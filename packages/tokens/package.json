@@ -1,0 +1,11 @@
+{
+  "name": "@zotstop/tokens",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.4.0"
+  }
+}
